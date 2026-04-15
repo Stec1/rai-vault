@@ -1,0 +1,8 @@
+# Core Principles
+
+1. **Clarity over novelty**: prioritize understandable models and decisions.
+2. **Execution with memory**: every major step leaves durable context.
+3. **Issue-driven delivery**: scope and complete work in explicit issue tracks.
+4. **Docs-first alignment**: documentation precedes and guides implementation.
+5. **Premium quality bar**: outputs should reflect trust, precision, and polish.
+6. **Model stability**: core terms and structures change intentionally, not casually.
