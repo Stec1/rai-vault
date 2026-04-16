@@ -14,7 +14,8 @@ Central map of content for the RAi operating memory.
 - [[04_MOC_Prompts]]
 
 ## Core Areas
-- Foundation: [[10_RAi_Definition]], [[13_Core_Principles]]
+- Foundation: [[10_RAi_Definition]], [[11_RAi_What_It_Is_And_Is_Not]], [[12_Terminology_Dictionary]], [[13_Core_Principles]], [[14_Frozen_Enums_And_Models]]
 - Product: [[20_Product_Vision]], [[21_MVP_Scope]]
 - Architecture: [[30_System_Architecture]], [[31_Infrastructure_State]]
 - Operations: [[80_Working_Model]], [[82_Handoff_Rules]], [[85_Update_Protocol]], [[86_Agent_Entry_Protocol]]
+- Notes: [[100_Notes/README|Exploratory Notes]]
