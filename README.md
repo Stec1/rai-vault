@@ -17,11 +17,12 @@ RAi Vault is the project's **structured operating memory**: a markdown-first kno
 - **Vault repo**: source of truth for operating context, plans, prompts, decisions, and execution memory.
 
 ## How to use this vault
-1. Start in [[00_MOC_RAi]] for navigation.
-2. Check [[00_Current_State]] and [[01_Next_Action]] before any execution.
-3. For active work, open the relevant `40_Execution/ISSUE-XX` folder.
-4. Log major choices in [[Decision_Index]].
-5. Store reusable prompts in `50_Prompts`.
+1. New agent or new session — start with [[86_Agent_Entry_Protocol]].
+2. Start in [[00_MOC_RAi]] for navigation.
+3. Check [[00_Current_State]] and [[01_Next_Action]] before any execution.
+4. For active work, open the relevant `40_Execution/ISSUE-XX` folder.
+5. Log major choices in [[Decision_Index]].
+6. Store reusable prompts in `50_Prompts`.
 
 ## Where to find key information
 - Current state: [[00_Current_State]]
