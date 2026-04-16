@@ -1,0 +1,15 @@
+/* RAi Vault — Graph Hub Emphasis
+   Enable in Obsidian: Settings → Appearance → CSS snippets → rai-vault-graph */
+
+/* Tier-0 hubs: README, MOC_RAi, Current_State, Next_Action, Decision_Index */
+.graph-view.color-fill text[data-label="README"],
+.graph-view.color-fill text[data-label="00_MOC_RAi"],
+.graph-view.color-fill text[data-label="00_Current_State"],
+.graph-view.color-fill text[data-label="01_Next_Action"],
+.graph-view.color-fill text[data-label="Decision_Index"] {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+
+/* TODO: founder — if fine-grained color control beyond graph.json is needed,
+   add selectors here per group. Current minimal setup relies on graph.json color groups. */
