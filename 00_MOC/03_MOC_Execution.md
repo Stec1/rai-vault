@@ -5,11 +5,13 @@
 - [[01_Next_Action]]
 
 ## Issue Tracks
-- `ISSUE-00` (Foundation)
-- `ISSUE-01` (Infrastructure baseline)
-- `ISSUE-02` (Deployment + health readiness)
-- `ISSUE-03` (Current: DB schema + seeds)
+- `ISSUE-00` — Foundation (Completed)
+- `ISSUE-01` — Infrastructure baseline (Completed)
+- `ISSUE-02` — Deployment + health readiness (Completed)
+- `ISSUE-03` — DB schema + seeds (Completed)
+- `ISSUE-04` — Authentication (Next)
 
 ## Related
 - [[Decision_Index]]
 - [[83_Review_Rules]]
+- [[85_Update_Protocol]]

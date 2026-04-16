@@ -24,3 +24,8 @@ A space for ideas, hypotheses, and founder strategic thinking.
 - Archive or delete stale notes monthly
 - Do not create a file per micro-idea — group into thematic files
 - If a file grows past 50 items — split into sub-files
+
+
+## Navigation
+- Back to vault: [[00_MOC_RAi]]
+- Promote ideas to: [[Decision_Index]]
