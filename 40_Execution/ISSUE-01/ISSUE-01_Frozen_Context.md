@@ -2,3 +2,25 @@
 
 ## Context Snapshot
 This issue captured a prior completed stage in the RAi sequence.
+
+## Related
+
+### Decisions
+- [[DL-002]]
+- [[DL-004]]
+
+### Product Models
+- (none)
+
+### Architecture
+- [[30_System_Architecture]]
+- [[31_Infrastructure_State]]
+
+### Audits
+- [[2026-04-15_Repo_Audit]]
+
+### Prompts
+- [[ISSUE-01_Readiness]]
+- [[ISSUE-01_Brief]]
+- [[ISSUE-01_Prompt_For_Claude]]
+- [[ISSUE-01_Result]]
