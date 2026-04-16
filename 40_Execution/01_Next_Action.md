@@ -1,9 +1,12 @@
 # Next Action
 
 ## Immediate Next Action
-Execute **ISSUE-03 database schema + seed execution** as the next implementation step.
+Виконати пост-ISSUE-03 стабілізацію контексту виконання:
+1. Зафіксувати та перевірити повноту vault-memory записів по ISSUE-03.
+2. Підтвердити наступний implementation issue для виконання.
+3. Продовжити execution з чистого оновленого контексту.
 
 ## Execution Intent
-- Finalize schema baseline in product repo.
-- Run and validate seed flow.
-- Capture results and review artifacts in ISSUE-03 notes.
+- Закрити цикл документації ISSUE-03 без змін продуктового коду.
+- Забезпечити єдину актуальну точку правди для наступного issue.
+- Уникнути повторного відкриття питання database foundation.
