@@ -17,4 +17,4 @@ Central map of content for the RAi operating memory.
 - Foundation: [[10_RAi_Definition]], [[13_Core_Principles]]
 - Product: [[20_Product_Vision]], [[21_MVP_Scope]]
 - Architecture: [[30_System_Architecture]], [[31_Infrastructure_State]]
-- Operations: [[80_Working_Model]], [[82_Handoff_Rules]]
+- Operations: [[80_Working_Model]], [[82_Handoff_Rules]], [[85_Update_Protocol]], [[86_Agent_Entry_Protocol]]
