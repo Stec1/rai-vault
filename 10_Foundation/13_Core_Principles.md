@@ -6,3 +6,8 @@
 4. **Docs-first alignment**: documentation precedes and guides implementation.
 5. **Premium quality bar**: outputs should reflect trust, precision, and polish.
 6. **Model stability**: core terms and structures change intentionally, not casually.
+Docs-first alignment -> [[DL-001]]
+Model stability -> [[DL-006]]
+
+## See also
+- [[10_RAi_Definition]], [[14_Frozen_Enums_And_Models]]
