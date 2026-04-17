@@ -1,10 +1,31 @@
 # API Surface
 
-## API Memory Scope
-Track the conceptual API surface and status, not implementation details.
+This note is an operating-level map of API route groups and intended behavior. Implementation lives in `apps/api/src/routes/` in the RAi product repo.
 
-## Confirmed
-- `/api/health` verified in production readiness flow.
+## Route group map
+| Route group | Purpose | Status |
+|---|---|---|
+| `/api/health` | Liveness and baseline runtime health check. | active (verified in [[ISSUE-02]]) |
+| `/api/v1/auth` | Authentication and session lifecycle flows. | pending ([[ISSUE-04]]) |
+| `/api/v1/observatories` | Observatory CRUD and ownership-scoped operations. | pending |
+| `/api/v1/domains` | Domain read and filter operations. | pending |
+| `/api/v1/systems` | System CRUD and related lifecycle operations. | pending |
+| `/api/v1/publications` | Publication CRUD and publication formatting workflows. | pending |
+| `/api/v1/upvotes` | Create/remove publication upvotes. | pending |
+| `/api/v1/search` | Full-text search across core content objects. | pending |
+| `/api/v1/generate` | Visual Signature generation and formatting queue entrypoints. | pending |
+| `/api/v1/visits` | Observatory visit tracking and aggregation intake. | pending |
+| `/api/v1/payments` | Stripe checkout session creation and webhook handling. | pending |
 
-## Next
-- Record new stable endpoints after ISSUE-03 and related execution steps.
+## Status notes
+- Only `/api/health` is active at this time.
+- Remaining route groups are tracked as planned/pending and should be promoted as implementations stabilize.
+
+## See also in vault
+- [[32_Database_Model]]
+- [[35_Integrations_Map]]
+- [[03_MOC_Execution]]
+
+## See also in repo
+- `docs/architecture.md`
+- `apps/api/src/routes/`
