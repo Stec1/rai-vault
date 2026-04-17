@@ -11,10 +11,10 @@ accurate, navigable, and usable for the next handoff.
 | Issue completed (merge done) | [[00_Current_State]]; [[01_Next_Action]]; active issue notes in [[00_Current_State]]; merge report artifact from [[Merge_Report_Template]]; [[Decision_Index]] if a decision was made | Link issue → merge report; merge report → issue; decision note ↔ issue when applicable |
 | Issue started (moved from planned to in_progress) | [[00_Current_State]]; [[01_Next_Action]]; active issue folder in [[00_Current_State]] | Link current state → active issue; active issue → next action |
 | Decision made | New decision note in [[Decision_Index]] using [[Template_Decision_Record]]; [[Decision_Index]]; [[00_Current_State]] if execution state changed | Decision note ↔ triggering issue; decision note ↔ affected product/architecture docs |
-| Audit completed | New entry in [[60_Audits/README|Audits]]; [[00_Current_State]]; [[01_Next_Action]] when follow-up is required | Audit note ↔ issue artifacts; audit note ↔ next action; audit note ↔ decision when relevant |
+| Audit completed | New entry in [[60_Audits/Audits_Hub|Audits]]; [[00_Current_State]]; [[01_Next_Action]] when follow-up is required | Audit note ↔ issue artifacts; audit note ↔ next action; audit note ↔ decision when relevant |
 | Reusable prompt identified | Prompt note in [[04_MOC_Prompts]]; [[04_MOC_Prompts]] if discoverability changed; optional status note in [[00_Current_State]] | Prompt note ↔ source issue/audit; prompt note ↔ workflow docs |
 | Architecture change detected | Relevant files in [[02_MOC_Architecture]]; [[00_Current_State]]; [[Decision_Index]] for policy-level changes | Architecture note ↔ triggering issue/audit; architecture note ↔ governing decision |
-| Idea promoted from 100_Notes to Decisions | Source idea in [[100_Notes/README|Exploratory Notes]]; new decision note in [[Decision_Index]]; [[Decision_Index]]; [[00_Current_State]] if direction changed | New decision note ↔ original idea note; decision note ↔ execution artifacts |
+| Idea promoted from 100_Notes to Decisions | Source idea in [[100_Notes/Notes_Hub|Exploratory Notes]]; new decision note in [[Decision_Index]]; [[Decision_Index]]; [[00_Current_State]] if direction changed | New decision note ↔ original idea note; decision note ↔ execution artifacts |
 
 ## Hard rules
 
