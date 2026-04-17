@@ -18,4 +18,4 @@ Central map of content for the RAi operating memory.
 - Product: [[20_Product_Vision]], [[21_MVP_Scope]]
 - Architecture: [[30_System_Architecture]], [[31_Infrastructure_State]]
 - Operations: [[80_Working_Model]], [[82_Handoff_Rules]], [[85_Update_Protocol]], [[86_Agent_Entry_Protocol]]
-- Notes: [[100_Notes/README|Exploratory Notes]]
+- Notes: [[100_Notes/Notes_Hub|Exploratory Notes]]
