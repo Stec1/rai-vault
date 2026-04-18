@@ -1,5 +1,7 @@
 # Decision Index
 
+Vault-native decisions use DL-001 style zero-padded IDs. Repo-mirrored decisions retain repo IDs such as DL-22.
+
 | ID | Title | Status | Date |
 |---|---|---|---|
 | [[DL-001]] | Documentation as operating source of truth | Accepted | 2026-04-15 |

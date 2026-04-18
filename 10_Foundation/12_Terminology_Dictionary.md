@@ -1,7 +1,7 @@
 # Terminology Dictionary
 
 ## Core Product Terms
-- **RA:** The platform identity — the central node of the RAi intelligence topology from which all Domains radiate. Not a user-created object, not a reputation asset.
+- **RA:** The platform identity — the central node of the RAi intelligence topology from which all Domains radiate. Not a user-created object, not a Reputation Asset.
 - **Domain:** A logical boundary grouping related systems, observatories, and outputs.
 - **Observatory:** The primary workspace for monitoring and presenting AI system context.
 - **ObservatoryType:** The observatory classification enum: `individual`, `studio`, or `product`.
