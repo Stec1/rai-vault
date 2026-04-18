@@ -8,3 +8,5 @@
 | [[DL-004]] | Issue-driven execution operating model | Accepted | 2026-04-15 |
 | [[DL-005]] | Prisma 7 adopted in API layer | Accepted | 2026-04-16 |
 | [[DL-006]] | ObservatoryType follows repo docs values | Accepted | 2026-04-16 |
+| [[DL-007]] | Lazy mirror policy for repo decisions in vault | Accepted | 2026-04-17 |
+| [[DL-22]] | Reputation Score, Not Star Ratings (mirrored from repo) | Accepted | 2026-04-17 |

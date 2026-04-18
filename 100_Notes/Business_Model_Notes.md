@@ -11,4 +11,4 @@ Stripe integration planned. Test mode until launch. See RAi repo `docs/architect
 - Enterprise angle?
 
 ## Notes
-[Add dated entries below]
+- **2026-04-17:** Pro $19/month is the only subscription tier in MVP. Enterprise/team tiers are out of scope (see [[29_Monetization_Model]]).
