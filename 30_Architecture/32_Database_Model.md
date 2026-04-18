@@ -7,7 +7,7 @@ This note is an operating-level map of database tables and their purpose. Implem
 |---|---|
 | User | Account identity, profile basics, entitlement state, and current credits balance snapshot. |
 | Observatory | Top-level user-owned container for domains, systems, and publication activity. |
-| Domain | Thematic grouping layer under an observatory for organizing systems and outputs. |
+| Domain | Platform-level thematic hub. 7 fixed Domains. Observatories associate with 1-2 Domains; Domains do not belong to Observatories. |
 | System | Structured unit of work within a domain, used to generate and publish outputs. |
 | Publication | Persisted published artifact and metadata for rendered or AI-assisted output. |
 | PublicationUpvote | Join/interaction record for user upvotes on publications. |
