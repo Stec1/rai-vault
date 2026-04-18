@@ -15,7 +15,7 @@ In MVP it is an operational trust signal attached to Observatory-level consisten
 - Score is shown on the Observatory page.
 - Score and contribution breakdown are shown in Control Panel.
 - Reputation influences sort order in Explore Observatories.
-- Model follows the directional decision in [[DL-22]] against star-style ratings.
+- Model follows the directional decision DL-22 in `docs/decision-log.md` against star-style ratings.
 
 ## Not in MVP
 - Star ratings.
