@@ -6,7 +6,9 @@ This note is an operating-level map of API route groups and intended behavior. I
 | Route group | Purpose | Status |
 |---|---|---|
 | `/api/health` | Liveness and baseline runtime health check. | active (verified in [[ISSUE-02]]) |
-| `/api/v1/auth` | Authentication and session lifecycle flows. | pending ([[ISSUE-04]]) |
+| Better Auth runtime endpoints | Authentication/session handling served by Better Auth runtime mount. | active (ISSUE-04 Phase 1) |
+| `/api/me` | Returns authenticated user context from protected API route. | active (ISSUE-04 Phase 1) |
+| `/api/v1/auth` | Versioned auth group in product model. | not active as standalone group (Better Auth runtime + `/api/me` are active) |
 | `/api/v1/observatories` | Observatory CRUD and ownership-scoped operations. | pending |
 | `/api/v1/domains` | Domain read and filter operations. | pending |
 | `/api/v1/systems` | System CRUD and related lifecycle operations. | pending |
@@ -18,8 +20,9 @@ This note is an operating-level map of API route groups and intended behavior. I
 | `/api/v1/payments` | Stripe checkout session creation and webhook handling. | pending |
 
 ## Status notes
-- Only `/api/health` is active at this time.
-- Remaining route groups are tracked as planned/pending and should be promoted as implementations stabilize.
+- Active API baseline includes `/api/health`, Better Auth runtime endpoints, and protected `/api/me`.
+- Auth Phase 1 is email/password only.
+- OAuth and password reset endpoints are deferred to auth Phase 2 and not active.
 
 ## See also in vault
 - [[32_Database_Model]]
