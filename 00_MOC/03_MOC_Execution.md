@@ -9,7 +9,8 @@
 - `ISSUE-01` — Infrastructure baseline (Completed)
 - `ISSUE-02` — Deployment + health readiness (Completed)
 - `ISSUE-03` — DB schema + seeds (Completed)
-- `ISSUE-04` — Authentication (Next)
+- `ISSUE-04` — Authentication Phase 1 (Completed)
+- Next implementation issue — not yet explicitly confirmed in current vault state
 
 ## Related
 - [[Decision_Index]]

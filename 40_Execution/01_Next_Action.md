@@ -1,16 +1,18 @@
 # Next Action
 
 ## Immediate Next Action
-Prepare and execute ISSUE-04 (Authentication):
-1. Create `40_Execution/ISSUE-04/` folder with Readiness, Prompt_For_Claude, Prompt_For_Code, Result files.
-2. Run readiness check for ISSUE-04 against current infrastructure state.
-3. Prepare Code prompt for ISSUE-04 execution.
+ISSUE-04 Phase 1 (authentication baseline) is complete.
+
+Execute this sequence:
+1. Confirm the next implementation issue from current repo/vault evidence.
+2. Prepare readiness artifacts for that confirmed issue before coding.
+3. Keep auth Phase 2 scope (Google OAuth, Resend, password reset) explicitly deferred unless it is selected as the next issue.
 
 ## Execution Intent
-- Implement authentication system (Better Auth, session cookies, email/password + Google OAuth).
-- Unlock protected routes for all subsequent issues.
-- Maintain strict issue-scoped execution per [[DL-004]].
+- Maintain strict issue-scoped execution and merge-report closure per [[DL-004]].
+- Preserve production-stable auth baseline while moving to the next confirmed issue.
 
 ## Dependencies
 - ISSUE-03 completed (database baseline present) — confirmed in [[00_Current_State]].
+- ISSUE-04 Phase 1 completed and deployed — reflected in [[00_Current_State]].
 - Infrastructure operational (PostgreSQL, Redis on Railway) — confirmed in [[31_Infrastructure_State]].
