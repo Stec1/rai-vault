@@ -23,6 +23,13 @@
 - Resend integration
 - Password reset flows
 
+### Observatory Identity Baseline — Completed (ISSUE-05)
+- ISSUE-05 is completed, merged, and deployed.
+- Observatory name availability endpoint active: GET /api/v1/observatories/check/:name (rate-limited).
+- Shared utilities active: reserved names, observatory name normalize + format validation, displayName derivation from email.
+- /api/me now returns observatory: { id, name } | null.
+- Post-login redirect rule in place: observatory present → /dashboard, absent → /create.
+
 ### Blockers / Risks
 - None currently recorded in vault execution notes
 

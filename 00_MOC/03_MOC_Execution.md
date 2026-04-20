@@ -10,7 +10,8 @@
 - `ISSUE-02` — Deployment + health readiness (Completed)
 - `ISSUE-03` — DB schema + seeds (Completed)
 - `ISSUE-04` — Authentication Phase 1 (Completed)
-- Next implementation issue — not yet explicitly confirmed in current vault state
+- `ISSUE-05` — Observatory Identity Logic (Completed)
+- Next implementation issue — pending founder selection (ISSUE-06 or ISSUE-07)
 
 ## Related
 - [[Decision_Index]]
