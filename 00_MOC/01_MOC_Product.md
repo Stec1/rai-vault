@@ -13,3 +13,6 @@
 - [[27_Publication_Model]]
 - [[28_Reputation_Model]]
 - [[29_Monetization_Model]]
+
+## Visual + Interface
+- [[2A_UI_System]]

@@ -12,6 +12,7 @@ This file bridges product models in `20_Product` with their technical implementa
 | Publication ([[27_Publication_Model]]) | publication metadata, versioning, status | [[ISSUE-03]] | [[32_Database_Model]] | Baseline implemented |
 | Reputation ([[28_Reputation_Model]]) | scoring dimensions, evidence links, confidence | Pending | Pending | Pending |
 | Onboarding ([[24_Onboarding_Model]]) | onboarding stage, completion flags, user context | Pending | Pending | Pending |
+| UI System ([[2A_UI_System]]) | semantic tokens, layout, motion, surface rules | Pending (ISSUE-06 onward) | Pending | Pending |
 
 ## How to update
 
