@@ -32,6 +32,7 @@
 
 ### Blockers / Risks
 - None currently recorded in vault execution notes
+- 2026-04-28: SI accepted as target architecture (see [[DL-008]], [[38_SI_Target_Bridge]]). Active MVP execution unchanged; ISSUE-06 is completed in the product repo, ISSUE-06 vault closure remains separate, and ISSUE-07 is the next implementation issue.
 
 ## Working Reference
 Use this note before planning, prompting, or coding.
