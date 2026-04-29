@@ -1,13 +1,15 @@
 # Next Action
 
 ## Immediate Next Action
-Confirm which issue is next in sequence (candidate: ISSUE-06 Start Page or ISSUE-07 About + Auth Screens — decision pending founder).
+Execute ISSUE-07 as the active next implementation step in MVP sequence.
 
 ## Execution Intent
-- Preserve production-stable ISSUE-05 baseline.
-- Maintain strict issue-scoped execution per [[DL-004]].
+- Preserve production-stable baseline from ISSUE-04, ISSUE-05, and ISSUE-06.
+- Keep strict issue-scoped execution discipline per [[DL-004]].
+- Do not pull SI target architecture scope into active MVP issue execution.
 
 ## Dependencies
+- ISSUE-06 completed — confirmed in [[00_Current_State]] and [[ISSUE-06_Result]].
 - ISSUE-05 completed — confirmed in [[00_Current_State]].
 - ISSUE-04 Phase 1 completed — confirmed in [[00_Current_State]].
 - Infrastructure operational (PostgreSQL, Redis on Railway) — confirmed in [[31_Infrastructure_State]].

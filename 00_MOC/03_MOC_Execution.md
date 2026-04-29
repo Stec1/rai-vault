@@ -11,7 +11,11 @@
 - `ISSUE-03` — DB schema + seeds (Completed)
 - `ISSUE-04` — Authentication Phase 1 (Completed)
 - `ISSUE-05` — Observatory Identity Logic (Completed)
-- Next implementation issue — pending founder selection (ISSUE-06 or ISSUE-07)
+- `ISSUE-06` — Start Page (Completed)
+  - [[ISSUE-06_Frozen_Context]]
+  - [[ISSUE-06_Result]]
+  - [[ISSUE-06_Merge_Report]]
+- Next implementation issue — ISSUE-07
 
 ## Related
 - [[Decision_Index]]
