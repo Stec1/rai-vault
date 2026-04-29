@@ -1,6 +1,6 @@
 # Current State
 
-## Snapshot (2026-04-20)
+## Snapshot (2026-04-29)
 
 ### Foundation Phase — Completed
 - ISSUE-00: Documentation rewrite — completed 2026-04-15
@@ -18,11 +18,6 @@
   - Redis-based auth rate limiting
   - Railway production runtime boot fixes applied and stable
 
-### Not Included Yet (Deferred)
-- Google OAuth
-- Resend integration
-- Password reset flows
-
 ### Observatory Identity Baseline — Completed (ISSUE-05)
 - ISSUE-05 is completed, merged, and deployed.
 - Observatory name availability endpoint active: GET /api/v1/observatories/check/:name (rate-limited).
@@ -30,9 +25,27 @@
 - /api/me now returns observatory: { id, name } | null.
 - Post-login redirect rule in place: observatory present → /dashboard, absent → /create.
 
+### Start Page Baseline — Completed (ISSUE-06)
+- ISSUE-06 is completed and merged (initial implementation + visual refinements).
+- Public Start Page is active at `/`.
+- Auth redirect behavior is preserved:
+  - unauthenticated users see Start Page,
+  - authenticated + no observatory → `/create`,
+  - authenticated + observatory → `/dashboard`.
+- UI foundation now includes semantic design tokens, global styles baseline, and typography stack (Space Grotesk / Inter / JetBrains Mono).
+- Start Page structure includes TopBar, Hero, How it Works, Domain showcase, CTA, Footer.
+- Refinements landed: transparent PNG domain objects (no card/chip/panel treatment), RA hero object on desktop/laptop/tablet only, hidden on mobile, no visible “RA” label.
+- Mobile presentation remains typography-first.
+
+### Not Included Yet (Deferred)
+- Google OAuth
+- Resend integration
+- Password reset flows
+- SI target architecture activation in MVP execution (accepted as post-MVP target only)
+
 ### Blockers / Risks
-- None currently recorded in vault execution notes
-- 2026-04-28: SI accepted as target architecture (see [[DL-008]], [[38_SI_Target_Bridge]]). Active MVP execution unchanged; ISSUE-06 is completed in the product repo, ISSUE-06 vault closure remains separate, and ISSUE-07 is the next implementation issue.
+- None currently recorded in vault execution notes.
+- SI target acceptance remains unchanged and post-MVP; active MVP path continues without SI scope pull-in.
 
 ## Working Reference
 Use this note before planning, prompting, or coding.
