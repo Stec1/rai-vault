@@ -15,7 +15,11 @@
   - [[ISSUE-06_Frozen_Context]]
   - [[ISSUE-06_Result]]
   - [[ISSUE-06_Merge_Report]]
-- Next implementation issue — ISSUE-07
+- `ISSUE-07` — About + Auth Screens (Completed)
+  - [[ISSUE-07_Frozen_Context]]
+  - [[ISSUE-07_Result]]
+  - [[ISSUE-07_Merge_Report]]
+- Next implementation issue — ISSUE-08
 
 ## Related
 - [[Decision_Index]]
