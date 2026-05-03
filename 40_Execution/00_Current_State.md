@@ -1,6 +1,6 @@
 # Current State
 
-## Snapshot (2026-04-29)
+## Snapshot (2026-05-03)
 
 ### Foundation Phase — Completed
 - ISSUE-00: Documentation rewrite — completed 2026-04-15
@@ -37,6 +37,19 @@
 - Refinements landed: transparent PNG domain objects (no card/chip/panel treatment), RA hero object on desktop/laptop/tablet only, hidden on mobile, no visible “RA” label.
 - Mobile presentation remains typography-first.
 
+
+### About + Auth Screens — Completed (ISSUE-07)
+- ISSUE-07 is completed, merged, and closed.
+- Public routes now include `/about`, `/privacy`, and `/terms` (privacy/terms are minimal placeholders).
+- Auth screens now include `/login` and `/signup` with Better Auth email/password flow.
+- Signup supports optional display name.
+- `/login` and `/signup` redirect authenticated users using `/api/me`:
+  - observatory present → `/dashboard`
+  - no observatory → `/create`.
+- About copy is MVP-editorial and intentionally excludes SI-only terminology.
+- UI implementation remains CSS Modules + semantic tokens; no Tailwind/new UI library/new runtime deps.
+- Google OAuth remains deferred to ISSUE-04 Phase 2; password reset and email verification remain out of scope.
+
 ### Not Included Yet (Deferred)
 - Google OAuth
 - Resend integration
@@ -49,5 +62,5 @@
 
 ## Working Reference
 Use this note before planning, prompting, or coding.
-Check [[01_Next_Action]] for the immediate executable step.
+Check [[01_Next_Action]] for the immediate executable step (now ISSUE-08).
 Check [[Decision_Index]] for recent decisions.
