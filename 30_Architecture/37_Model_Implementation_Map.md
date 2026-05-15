@@ -6,13 +6,13 @@ This file bridges product models in `20_Product` with their technical implementa
 
 | Product Model | Core Fields | Implemented In (issue) | Architecture Note | Status |
 | --- | --- | --- | --- | --- |
-| Domain ([[23_Domain_Model]]) | taxonomy, canonical IDs, relationships | [[ISSUE-03]] | [[32_Database_Model]] | Baseline implemented |
-| Observatory ([[25_Observatory_Model]]) | observatory metadata, ownership, lifecycle state | [[ISSUE-03]] | [[32_Database_Model]] | Baseline implemented |
-| System ([[26_System_Model]]) | system profile, capabilities, integration hooks | [[ISSUE-03]] | [[32_Database_Model]] | Baseline implemented |
-| Publication ([[27_Publication_Model]]) | publication metadata, versioning, status | [[ISSUE-03]] | [[32_Database_Model]] | Baseline implemented |
-| Reputation ([[28_Reputation_Model]]) | scoring dimensions, evidence links, confidence | Pending | Pending | Pending |
-| Onboarding ([[24_Onboarding_Model]]) | onboarding stage, completion flags, user context, auth route redirect behavior via `/api/me` | [[ISSUE-07]] | [[38_SI_Target_Bridge]] (target remains post-MVP) | Baseline implemented for auth entry UX |
-| UI System ([[2A_UI_System]]) | semantic tokens, global styles baseline, typography baseline, responsive Start Page composition (TopBar/Hero/How it Works/Domain showcase/CTA/Footer), mobile typography-first behavior, About/Auth editorial card UI, legal placeholders (`/privacy`, `/terms`) | [[ISSUE-06]], [[ISSUE-07]] | [[38_SI_Target_Bridge]] (target remains post-MVP) | Baseline implemented through Start + About/Auth surfaces |
+| Domain ([[23_Domain_Model]]) | taxonomy, canonical IDs, relationships, topology discovery nodes | [[ISSUE-03]], [[ISSUE-08]], [[ISSUE-08R]] | [[32_Database_Model]], [[33_API_Surface]] | Implemented; seeded and production-validated (7 domains) |
+| Observatory ([[25_Observatory_Model]]) | observatory metadata, ownership, lifecycle state | [[ISSUE-03]], [[ISSUE-05]] | [[32_Database_Model]], [[33_API_Surface]] | Baseline identity model implemented; create/dashboard and graph-node expansion remain early/placeholder |
+| System ([[26_System_Model]]) | system profile, capabilities, integration hooks | Pending | [[32_Database_Model]] | Not implemented |
+| Publication ([[27_Publication_Model]]) | publication metadata, versioning, status | Pending | [[32_Database_Model]] | Not implemented |
+| Reputation ([[28_Reputation_Model]]) | scoring dimensions, evidence links, confidence | Pending | Pending | Not implemented |
+| Onboarding ([[24_Onboarding_Model]]) | onboarding stage, completion flags, user context, auth route redirect behavior via `/api/me` and `/explore` | [[ISSUE-07]], [[ISSUE-08R]] | [[38_SI_Target_Bridge]] (target remains post-MVP) | Baseline routing/entry UX implemented |
+| UI System ([[2A_UI_System]]) | semantic tokens, global styles baseline, Start Page baseline, Explore SVG topology, canonical TopBar roles, PNG cleanup | [[ISSUE-06]], [[ISSUE-07]], [[ISSUE-08R]] | [[38_SI_Target_Bridge]] (target remains post-MVP) | MVP baseline implemented through Start/About/Auth/Explore topology surfaces |
 
 ## How to update
 
@@ -24,10 +24,8 @@ This file bridges product models in `20_Product` with their technical implementa
 
 See [[01_MOC_Product]] for model intent, [[02_MOC_Architecture]] for implementation references, and [[03_MOC_Execution]] for issue-level delivery.
 
+## Post-ISSUE-08R notes
 
-## ISSUE-07 implementation notes
-
-- Public About route (`/about`) is implemented with MVP-editorial scope (RAi, Domains, Observatories, Publications, Reputation).
-- Auth entry routes (`/login`, `/signup`) are implemented with Better Auth email/password UI.
-- Google OAuth remains deferred to ISSUE-04 Phase 2; password reset/email verification screens remain out of scope.
-- SI target architecture position is unchanged: accepted as post-MVP target only.
+- `/explore` is currently SVG-based MVP topology, not Three.js/R3F-mandated implementation.
+- Observatory nodes on explore graph are not recorded as implemented.
+- SI target architecture position remains unchanged: accepted as post-MVP target only.

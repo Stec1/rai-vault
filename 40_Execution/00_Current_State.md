@@ -1,66 +1,52 @@
 # Current State
 
-## Snapshot (2026-05-03)
+## Snapshot (2026-05-15)
 
-### Foundation Phase — Completed
-- ISSUE-00: Documentation rewrite — completed 2026-04-15
-- ISSUE-01: Monorepo scaffold + infrastructure baseline — completed 2026-04-15
-- ISSUE-02: Deployment + health readiness (PostgreSQL, Redis, `/api/health`) — completed 2026-04-15
-- ISSUE-03: Database schema + seed — completed 2026-04-16
+### Foundation + Auth Baseline — Completed
+- ISSUE-00 through ISSUE-07 are completed and remain closed.
+- SI target architecture remains accepted as post-MVP target only (no SI scope pull-in to active MVP execution).
 
-### Auth Phase Baseline — Completed (ISSUE-04 Phase 1)
-- ISSUE-04 Phase 1 is completed, merged, and deployed.
-- Implementation baseline now includes:
-  - Better Auth with Prisma adapter
-  - Auth persistence tables: Session, Account, Verification
-  - Email/password authentication (only)
-  - Protected route: `/api/me`
-  - Redis-based auth rate limiting
-  - Railway production runtime boot fixes applied and stable
+### Explore Foundation + Redesign Chain — Completed
+- ISSUE-08 completed as technical foundation:
+  - `/api/v1/domains` activated.
+  - initial `/explore` map/topology baseline landed.
+  - original PNG-node + mini-map visual direction was superseded by ISSUE-08R.
+- ISSUE-08R completed:
+  - `/explore` rebuilt as SVG MVP topology (RA center + 7 domain nodes + RA→Domain connections).
+  - info-panel interaction and auth-aware CTA integrated.
+  - post-auth no-observatory destination switched to `/explore`.
+- ISSUE-08R follow-ups completed:
+  - ISSUE-08R.1 routing/chrome correction,
+  - ISSUE-08R.2 pan/zoom hardening,
+  - ISSUE-08R.3 PNG cleanup (DL-27),
+  - ISSUE-08R.4 canonical TopBar/routing cleanup (DL-28).
 
-### Observatory Identity Baseline — Completed (ISSUE-05)
-- ISSUE-05 is completed, merged, and deployed.
-- Observatory name availability endpoint active: GET /api/v1/observatories/check/:name (rate-limited).
-- Shared utilities active: reserved names, observatory name normalize + format validation, displayName derivation from email.
-- /api/me now returns observatory: { id, name } | null.
-- Post-login redirect rule in place: observatory present → /dashboard, absent → /create.
+### Canonical UX/Routing Baseline (post ISSUE-08R.4)
+- `/` Start Page renders for all visitors.
+- `/explore` is public discovery and primary post-auth topology surface for authenticated users without observatory.
+- `/create` remains CTA destination from Explore for auth-no-observatory users (placeholder/early surface).
+- `/dashboard` remains destination for authenticated users with observatory (placeholder/early surface).
+- TopBar canonical roles (DL-28):
+  - logo → `/`
+  - guest → About / Log in / Get Started
+  - authNoObservatory → Explore / About / Sign out
+  - authWithObservatory → Explore / Dashboard / Sign out
+- PNG domain objects are removed from MVP visual system (DL-27).
 
-### Start Page Baseline — Completed (ISSUE-06)
-- ISSUE-06 is completed and merged (initial implementation + visual refinements).
-- Public Start Page is active at `/`.
-- Auth redirect behavior is preserved:
-  - unauthenticated users see Start Page,
-  - authenticated + no observatory → `/create`,
-  - authenticated + observatory → `/dashboard`.
-- UI foundation now includes semantic design tokens, global styles baseline, and typography stack (Space Grotesk / Inter / JetBrains Mono).
-- Start Page structure includes TopBar, Hero, How it Works, Domain showcase, CTA, Footer.
-- Refinements landed: transparent PNG domain objects (no card/chip/panel treatment), RA hero object on desktop/laptop/tablet only, hidden on mobile, no visible “RA” label.
-- Mobile presentation remains typography-first.
+### Production Runtime Stability — Recovered and Active
+- Same-origin Vercel API proxy is stable (`/api/...` via Vercel to Railway API).
+- `/api/health` returns 200 via proxy.
+- `/api/v1/domains` returns 7 domains via proxy.
+- Signup/login sessions and `/api/me` auth check are operational through same-origin flow.
+- Recovery details are recorded in [[ISSUE-08_Recovery_Notes]].
 
-
-### About + Auth Screens — Completed (ISSUE-07)
-- ISSUE-07 is completed, merged, and closed.
-- Public routes now include `/about`, `/privacy`, and `/terms` (privacy/terms are minimal placeholders).
-- Auth screens now include `/login` and `/signup` with Better Auth email/password flow.
-- Signup supports optional display name.
-- `/login` and `/signup` redirect authenticated users using `/api/me`:
-  - observatory present → `/dashboard`
-  - no observatory → `/create`.
-- About copy is MVP-editorial and intentionally excludes SI-only terminology.
-- UI implementation remains CSS Modules + semantic tokens; no Tailwind/new UI library/new runtime deps.
-- Google OAuth remains deferred to ISSUE-04 Phase 2; password reset and email verification remain out of scope.
-
-### Not Included Yet (Deferred)
-- Google OAuth
-- Resend integration
-- Password reset flows
-- SI target architecture activation in MVP execution (accepted as post-MVP target only)
-
-### Blockers / Risks
-- None currently recorded in vault execution notes.
-- SI target acceptance remains unchanged and post-MVP; active MVP path continues without SI scope pull-in.
+### Deferred / Not Completed Yet
+- Full Create Observatory flow implementation is not recorded as complete.
+- Dashboard is not recorded as complete.
+- Observatory graph nodes on `/explore` are not recorded as implemented.
+- Three.js/R3F topology runtime is not recorded as active implementation.
 
 ## Working Reference
 Use this note before planning, prompting, or coding.
-Check [[01_Next_Action]] for the immediate executable step (now ISSUE-08).
+Check [[01_Next_Action]] for the immediate executable step.
 Check [[Decision_Index]] for recent decisions.

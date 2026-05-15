@@ -1,16 +1,18 @@
 # Next Action
 
 ## Immediate Next Action
-Execute **ISSUE-08** as the active next implementation step in MVP sequence.
+Execute **Create Observatory flow baseline implementation** as the next active MVP step (Candidate B).
 
-## Execution Intent
-- Preserve production-stable baseline from ISSUE-04, ISSUE-05, ISSUE-06, and ISSUE-07.
-- Keep strict issue-scoped execution discipline per [[DL-004]].
-- Do not pull SI target architecture scope into active MVP issue execution.
+## Why this is next
+- Current UX now routes auth-without-observatory users to `/explore` first.
+- Primary CTA from Explore points to `/create`, but `/create` is still recorded as placeholder/early surface.
+- Converting `/create` from placeholder to reliable baseline flow is the shortest dependency path after ISSUE-08R stabilization.
 
-## Dependencies
-- ISSUE-07 completed — confirmed in [[00_Current_State]] and [[ISSUE-07_Result]].
-- ISSUE-06 completed — confirmed in [[00_Current_State]].
-- ISSUE-05 completed — confirmed in [[00_Current_State]].
-- ISSUE-04 Phase 1 completed — confirmed in [[00_Current_State]].
-- Infrastructure operational (PostgreSQL, Redis on Railway) — confirmed in [[31_Infrastructure_State]].
+## Alternate candidate (not primary)
+- Candidate A: RAi Premium Glass Design System Foundation / Start Page visual refresh / graph UI direction.
+- Rationale for deferral: visual direction was recently stabilized by ISSUE-08R.4; core product progression now benefits more from making Create Observatory flow executable.
+
+## Execution intent
+- Preserve ISSUE-08R.4 canonical routing and TopBar roles.
+- Keep `/explore` as public discovery + post-auth topology surface.
+- Keep SI target architecture out of active MVP implementation scope.
