@@ -14,3 +14,6 @@ Vault-native decisions use DL-001 style zero-padded IDs. Repo-mirrored decisions
 | [[DL-22]] | Reputation Score, Not Star Ratings (mirrored from repo) | Accepted | 2026-04-17 |
 | [[DL-008]] | Approve SI as Target Architecture (Post-MVP) | Accepted | 2026-04-28 |
 | [[DL-25]] | Architectural Law: Show, Coordinate, Verify, Settle — Not Execute (mirrored from repo) | Accepted | 2026-04-28 |
+| [[DL-26]] | Explore as Primary Post-Auth Topology Surface | Accepted | 2026-05-15 |
+| [[DL-27]] | PNG Domain Objects Removed from MVP Visual System | Accepted | 2026-05-15 |
+| [[DL-28]] | TopBar Canonical Roles and Routing Discipline | Accepted | 2026-05-15 |

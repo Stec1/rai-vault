@@ -5,12 +5,12 @@ This note is an operating-level map of API route groups and intended behavior. I
 ## Route group map
 | Route group | Purpose | Status |
 |---|---|---|
-| `/api/health` | Liveness and baseline runtime health check. | active (verified in [[ISSUE-02]]) |
-| Better Auth runtime endpoints | Authentication/session handling served by Better Auth runtime mount. | active (ISSUE-04 Phase 1) |
-| `/api/me` | Returns authenticated user context plus observatory `{ id, name } \| null` (ISSUE-05). | active (ISSUE-04 Phase 1 + ISSUE-05 extension) |
+| `/api/health` | Liveness and runtime health check through same-origin Vercel proxy path. | active (production-validated via proxy) |
+| Better Auth runtime endpoints | Authentication/session handling via Better Auth runtime mount, consumed through same-origin `/api/...` frontend path. | active |
+| `/api/me` | Returns authenticated user context plus observatory `{ id, name } \| null`; used for auth-aware routing checks. | active |
 | `/api/v1/auth` | Versioned auth group in product model. | not active as standalone group (Better Auth runtime + `/api/me` are active) |
-| `/api/v1/observatories` | Observatory identity operations including public name availability check; broader CRUD/ownership operations remain pending. | partial (check endpoint active in ISSUE-05; CRUD pending) |
-| `/api/v1/domains` | Domain read and filter operations. | pending |
+| `/api/v1/observatories` | Observatory identity operations including public name availability check; broader CRUD/ownership operations remain pending. | partial (check endpoint active; CRUD pending) |
+| `/api/v1/domains` | Domain read operations for Explore topology and discovery surfaces. | active (returns 7 seeded domains in production via proxy) |
 | `/api/v1/systems` | System CRUD and related lifecycle operations. | pending |
 | `/api/v1/publications` | Publication CRUD and publication formatting workflows. | pending |
 | `/api/v1/upvotes` | Create/remove publication upvotes. | pending |
@@ -20,14 +20,15 @@ This note is an operating-level map of API route groups and intended behavior. I
 | `/api/v1/payments` | Stripe checkout session creation and webhook handling. | pending |
 
 ## Status notes
-- Active API baseline includes `/api/health`, Better Auth runtime endpoints, and protected `/api/me`.
-- ISSUE-05 added public name availability check under `/api/v1/observatories/check/:name` (rate-limited 30/min per IP) and extended `/api/me` with observatory field.
-- Auth Phase 1 is email/password only.
-- OAuth and password reset endpoints are deferred to auth Phase 2 and not active.
+- Active API baseline includes `/api/health`, Better Auth runtime endpoints, `/api/me`, and `/api/v1/domains`.
+- Same-origin API path is browser `→ /api/...` on Vercel frontend origin, proxying to Railway API origin.
+- Auth signup/login and `/api/me` session checks are production-valid through same-origin proxy.
+- OAuth and password reset endpoints remain deferred and not active.
 
 ## See also in vault
 - [[32_Database_Model]]
 - [[35_Integrations_Map]]
+- [[36_Deployment_State]]
 - [[03_MOC_Execution]]
 
 ## See also in repo
